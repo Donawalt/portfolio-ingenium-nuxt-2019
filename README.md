@@ -1,6 +1,4 @@
-# codesandbox-nuxt
-
-> Nuxt starter for CodeSandBox (used for https://template.nuxtjs.org)
+# PORTFOLIO INGENIVM NUXT
 
 ## Build Setup
 
@@ -19,4 +17,4 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) or [portfolio](https://donaelwalter.com).

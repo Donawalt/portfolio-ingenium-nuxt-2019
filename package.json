@@ -1,8 +1,8 @@
 {
   "name": "ingenium-nuxt",
   "version": "1.0.0",
-  "description": "Nuxt starter for CodeSandBox",
-  "author": "Nuxt.js Team",
+  "description": "NUXT PORTFOLIO INGENIVM",
+  "author": "Nuxt.js Team & Donaël Walter",
   "private": true,
   "scripts": {
     "dev": "nuxt",
