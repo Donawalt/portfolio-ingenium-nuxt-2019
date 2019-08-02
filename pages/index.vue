@@ -46,6 +46,7 @@ export default {
         opacity: 0,
         delay: 0.5
       });
+      tl.set(loader,{display: 'none'});
 
       function updateHandler() {
         num.innerHTML = load.value;
