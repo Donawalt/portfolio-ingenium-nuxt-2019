@@ -1,5 +1,5 @@
 <template>
-  <div ref="loader" class="Loader">
+  <div ref="loader" class="Loader content">
     <div ref="loaderC" class="Loader__container">
       <section class="Loader__intro">
         <p ref="hey" class="intro_item intro__hey">Hey</p>

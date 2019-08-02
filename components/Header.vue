@@ -32,6 +32,7 @@ a:hover {
   width: 100%;
   top: 0;
   padding: 10px;
+  z-index: 1000;
 }
 .menu {
   display: flex;

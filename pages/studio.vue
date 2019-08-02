@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container content">
     <section class="tag">
       <p class="we">
         <span ref="a">AUDIOVISUAL STUDIO</span>
@@ -28,7 +28,28 @@
 </template>
 
 <script>
-export default {};
+export default {
+      transition: {
+      name: 'page',
+      beforeEnter(el) {
+        el.style.opacity = 0;
+      },
+      enter(el){
+        const tlE = new TimelineLite();
+
+        tlE.to(el,1,{opacity: 1});
+      },
+      beforeLeave(el) {
+        console.log('Before leave');
+        el.style.opacity = 1;
+      },
+      leave(el){
+        const tlE = new TimelineLite();
+
+        tlE.to(el,1,{opacity: 0});
+      }
+    }
+};
 </script>
 
 <style scoped>

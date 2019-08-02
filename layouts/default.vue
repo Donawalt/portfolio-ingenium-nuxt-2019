@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <main class="container">
     <Header/>
-    <Nuxt/>
-  </div>
+    <Nuxt data-scroll/>
+  </main>
 </template>
 
 <script>
@@ -17,8 +17,7 @@ export default {
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto,"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -28,6 +27,11 @@ html {
   box-sizing: border-box;
   color: white;
   background-color: black;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 *,
@@ -70,5 +74,13 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #2E495E;
+}
+
+main{
+  overflow: hidden;
+}
+
+body{
+  padding-right: 15px;
 }
 </style>
