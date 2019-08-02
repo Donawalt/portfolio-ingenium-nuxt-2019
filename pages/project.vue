@@ -148,6 +148,11 @@
 
       }
     },
+    head() {
+      return {
+        title: 'Project | INGENIVM PORTFOLIO'
+      }
+    },
     methods: {
       onLoad: function () {
         const {

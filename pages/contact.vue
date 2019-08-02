@@ -12,66 +12,78 @@
 </template>
 
 <script>
-export default {
-      transition: {
+  export default {
+    transition: {
       name: 'page',
       beforeEnter(el) {
         el.style.opacity = 0;
       },
-      enter(el){
+      enter(el) {
         const tlE = new TimelineLite();
 
-        tlE.to(el,1,{opacity: 1});
+        tlE.to(el, 1, {
+          opacity: 1
+        });
       },
       beforeLeave(el) {
         console.log('Before leave');
         el.style.opacity = 1;
       },
-      leave(el){
+      leave(el) {
         const tlE = new TimelineLite();
 
-        tlE.to(el,1,{opacity: 0});
+        tlE.to(el, 1, {
+          opacity: 0
+        });
+      }
+    },
+    head() {
+      return {
+        title: 'Contact | INGENIVM PORTFOLIO'
       }
     }
-};
+  };
+
 </script>
 
 <style scoped>
-.tag,
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  width: 70vw;
-  font-weight: bold;
-}
+  .tag,
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 70vw;
+    font-weight: bold;
+  }
 
-.container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
+  .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
 
-.tag > .we {
-  font-size: 70px;
-  color: transparent;
-  -webkit-text-stroke: 2px white;
-  overflow: hidden;
-}
+  .tag>.we {
+    font-size: 70px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    overflow: hidden;
+  }
 
-.a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 72px;
-}
-.a > a {
-  color: white;
-  text-decoration: none;
-}
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+  }
+
+  .a>a {
+    color: white;
+    text-decoration: none;
+  }
+
 </style>
