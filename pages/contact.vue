@@ -147,5 +147,12 @@
     border-radius: 25px;
     text-transform: uppercase;
     font-weight: bold; 
+    cursor:pointer;
+    transition: 250ms;
+  }
+
+  input[type=submit]:hover{
+    background-color: #105e5e;
+    transition: 250ms;
   }
 </style>
